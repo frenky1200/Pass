@@ -29,4 +29,9 @@
             android:id="@+id/button2" app:layout_constraintStart_toStartOf="@+id/toolbar2"
             android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
             android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true" app:srcCompat="@android:color/holo_blue_bright"
+            android:id="@+id/floatingActionButton"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

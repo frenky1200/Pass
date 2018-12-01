@@ -11,7 +11,7 @@ class UpdateActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.second_activity)
-
+        val id = intent.getIntExtra("id", 1)
         button.setOnClickListener {
             db.writableDatabase
             db.use{
@@ -19,7 +19,7 @@ class UpdateActivity: AppCompatActivity() {
                     "name" to editName.text.toString(),
                     "login" to editLogin.text.toString(),
                     "pass" to editPass.text.toString()
-                    ).whereArgs("id = 1")
+                    ).whereArgs("id = {id}", "id" to id).exec()
             }
         }
 

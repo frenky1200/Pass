@@ -1,11 +1,9 @@
-import android.app.*
-import android.view.*
-import android.widget.*
+package com.example.vpb.pass
+
+import android.view.View
+import android.widget.LinearLayout
 import org.jetbrains.anko.*
-import android.os.Bundle
-import com.example.vpb.pass.MyAdapter
 import org.jetbrains.anko.constraint.layout.constraintLayout
-import org.jetbrains.anko.sdk27.coroutines.onClick
 
 class SomeActivity : AnkoComponent<MyAdapter> {
 
@@ -15,12 +13,15 @@ class SomeActivity : AnkoComponent<MyAdapter> {
 
             constraintLayout {
                 id = Ids.linearLayout
+
                 textView {
                     id = Ids.textViewName
                 }.lparams(width = dip(0), height = wrapContent)
+
                 textView("Ranchi, Jharkhand") {
                     id = Ids.textViewLogin
                 }.lparams(width = dip(0), height = wrapContent)
+
                 textView("TextView") {
                     id = Ids.textViewPass
                 }.lparams(width = dip(0), height = wrapContent)

@@ -2,6 +2,7 @@ package com.example.vpb.pass
 
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
+import kotlinx.android.synthetic.main.second_activity.*
 import org.jetbrains.anko.db.*
 
 class MyDatabaseOpenHelper(ctx: Context) : ManagedSQLiteOpenHelper(ctx, "MyDatabase", null, 1) {
