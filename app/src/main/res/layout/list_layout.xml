@@ -41,6 +41,13 @@
                     app:layout_constraintStart_toEndOf="@+id/textViewLogin"
                     app:layout_constraintHorizontal_bias="0.5" android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"/>
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" app:srcCompat="@android:drawable/btn_star_big_on"
+                    android:id="@+id/imageButton"
+                    app:layout_constraintEnd_toEndOf="@+id/textViewName" android:layout_marginEnd="8dp"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.appcompat.widget.LinearLayoutCompat>

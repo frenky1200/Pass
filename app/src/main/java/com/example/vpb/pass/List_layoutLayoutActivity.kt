@@ -1,6 +1,8 @@
 package com.example.vpb.pass
 
+import android.view.MenuInflater
 import android.view.View
+import android.view.View.inflate
 import android.widget.LinearLayout
 import org.jetbrains.anko.*
 import org.jetbrains.anko.constraint.layout.constraintLayout
@@ -25,6 +27,10 @@ class SomeActivity : AnkoComponent<MyAdapter> {
                 textView("TextView") {
                     id = Ids.textViewPass
                 }.lparams(width = dip(0), height = wrapContent)
+
+                imageButton(android.R.drawable.ic_input_add){
+                    id = Ids.iVbutton
+                }
             }.lparams(width = matchParent, height = wrapContent)
         }
     }
@@ -34,5 +40,6 @@ class SomeActivity : AnkoComponent<MyAdapter> {
         val textViewLogin = 2
         val textViewName = 3
         val textViewPass = 4
+        val iVbutton = 5
     }
 }
